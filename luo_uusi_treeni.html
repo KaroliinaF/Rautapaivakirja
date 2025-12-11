@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo uusi treeni</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<nav id="navi">
+    <a href="./index.html">Etusivu</a>
+    <a href="./omat_treenit.html">Omat treenit</a>
+    <a href="./luo_uusi_treeni.html" class="active">Luo uusi treeni</a>
+    <a href="./omat_sivut.html">Omat sivut</a>
+    <a href="./kirjaudu.html" id="loginLink">Kirjaudu</a>
+    <a href="#" id="logoutBtn" onclick="kirjauduUlos()">Kirjaudu ulos</a>
+</nav>
+
+<main>
+
+<div class="contents">
+
+    <div class="logo-oikea">
+        <img id="logo" src="./rautapaivakirja.png" alt="Logo">
+    </div>
+
+    <h1>Uuden treenin luonti</h1>
+
+    <form id="treenilomake">
+        <label for="liike">Liike:</label>
+        <input type="text" id="liike" required><br><br>
+
+        <label for="painot">Painot:</label>
+        <input type="number" id="painot" required><br><br>
+
+        <label for="sarjat">Sarjat:</label>
+        <input type="number" id="sarjat" required><br><br>
+
+        <button>Lisää</button>
+    </form>
+
+    <h3>Luodut treenit:</h3>
+    <div id="luodut_treenit"></div>
+
+</div>
+
+</main>
+
+<footer>© 2025 Karoliina Fernandes</footer>
+
+</body>
+</html>

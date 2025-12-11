@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirjaudu</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+<nav id="navi">
+    <a href="./index.html">Etusivu</a>
+    <a href="./omat_treenit.html">Omat treenit</a>
+    <a href="./luo_uusi_treeni.html">Luo uusi treeni</a>
+    <a href="./omat_sivut.html">Omat sivut</a>
+    <a href="./kirjaudu.html" class="active" id="loginLink">Kirjaudu</a>
+    <a href="#" id="logoutBtn" onclick="kirjauduUlos()">Kirjaudu ulos</a>
+</nav>
+
+<main>
+
+<div class="contents">
+
+    <div class="logo-oikea">
+        <img id="logo" src="./rautapaivakirja.png" alt="Logo">
+    </div>
+
+    <h1>Kirjaudu sisään</h1>
+
+    <form id="kirjautumislomake">
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Salasana:</label>
+        <input type="password" id="password" minlength="8" required><br><br>
+
+        <button>Kirjaudu</button>
+        <p id="virheilmoitus" style="color:red;"></p>
+    </form>
+
+</div>
+
+</main>
+
+<footer>© 2025 Karoliina Fernandes</footer>
+
+</body>
+</html>

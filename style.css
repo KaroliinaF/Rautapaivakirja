@@ -1,0 +1,181 @@
+/* -----------------------
+   PERUSASETUKSET
+-------------------------*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F7FF;
+  color: #000957;
+}
+
+main {
+    min-height: 85vh;
+}
+
+/* -----------------------
+      NAVIGOINTI
+-------------------------*/
+
+nav {
+    background-color: #AAB4E1;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Menun linkit */
+nav a {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #000957;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #ffeb00;
+}
+
+nav a:hover {
+    color: #ffeb00;
+}
+
+/* -----------------------
+      LOGON SISÄLLÄ
+-------------------------*/
+
+.logo-oikea {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 120px;
+    border-radius: 8px;
+}
+
+/* -----------------------
+      SISÄLLÖN ALUE
+-------------------------*/
+
+.contents {
+    margin: 40px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* -----------------------
+      PAINIKKEET
+-------------------------*/
+
+.boksicontainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.boksi {
+    background-color: #577CB1;
+    color: white !important;
+    width: 150px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boksi:hover {
+    background-color: #6b8cca;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* -----------------------
+      POISTA-PAINIKE
+-------------------------*/
+
+.poista {
+    background-color: #C62828;
+    color: white;
+    margin-top: 8px;
+}
+
+.poista:hover {
+    background-color: #E53935;
+}
+
+/* -----------------------
+      TREENIKORTIT
+-------------------------*/
+
+.treeni {
+    background-color: #DCE4FF;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.treeni p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* -----------------------
+      FOOTER
+-------------------------*/
+
+footer {
+    background-color: #577CB1;  
+    min-height: 50px;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 15px;
+}
+
+/* -----------------------
+      MOBILE
+-------------------------*/
+
+@media (max-width: 700px) {
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    .contents {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .treeni {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
