@@ -19,7 +19,6 @@
 </nav>
 
 <main>
-
 <div class="contents">
 
     <div class="logo-oikea">
@@ -28,24 +27,57 @@
 
     <h1>Uuden treenin luonti</h1>
 
-    <form id="treenilomake">
-        <label for="liike">Liike:</label>
-        <input type="text" id="liike" required><br><br>
+    <form id="uusiTreeniLomake">
+        <label for="treeninNimi"><strong>Treenin nimi</strong></label><br>
+        <input type="text" id="treeninNimi" placeholder="Esim. Jalkatreeni" required><br><br>
 
-        <label for="painot">Painot:</label>
-        <input type="number" id="painot" required><br><br>
+        <label for="treeninTyyppi"><strong>Treenin tyyppi</strong></label><br>
+        <select id="treeninTyyppi" required>
+            <option value="">Valitse tyyppi</option>
+            <option value="Voima">Voima</option>
+            <option value="Hypertrofia">Hypertrofia</option>
+            <option value="Koko kroppa">Koko kroppa</option>
+            <option value="Kestävyys">Kestävyys</option>
+            <option value="Tekniikka">Tekniikka</option>
+        </select><br><br>
 
-        <label for="sarjat">Sarjat:</label>
-        <input type="number" id="sarjat" required><br><br>
+        <label for="kehonOsa"><strong>Kehon osa</strong></label><br>
+        <select id="kehonOsa" required>
+            <option value="">Valitse kehon osa</option>
+            <option value="Jalat">Jalat</option>
+            <option value="Rinta">Rinta</option>
+            <option value="Selkä">Selkä</option>
+            <option value="Kädet">Kädet</option>
+            <option value="Core">Core</option>
+            <option value="Hartiat">Hartiat</option>
+            <option value="Muu">Muu</option>
+        </select>
 
-        <button>Lisää</button>
+        <hr>
+
+        <h2>Lisää harjoitus tähän treeniin</h2>
+
+        <label for="liike"><strong>Liike</strong></label><br>
+        <input type="text" id="liike" placeholder="Esim. Kyykky tangolla"><br><br>
+
+        <label for="painot"><strong>Painot (kg)</strong></label><br>
+        <input type="number" id="painot" placeholder="Esim. 60"><br><br>
+
+        <label for="sarjat"><strong>Sarjat</strong></label><br>
+        <input type="number" id="sarjat" placeholder="Esim. 3"><br><br>
+
+        <button type="button" onclick="lisaaHarjoitusLuontiin()">Lisää liike</button>
+
+        <hr>
+
+        <h2>Treeni näyttää nyt tältä</h2>
+        <div id="luonnosTreenista"></div>
+
+        <button type="submit">Tallenna treeni</button>
+        <p id="uusiTreeniViesti" style="margin-top:10px;"></p>
     </form>
 
-    <h3>Luodut treenit:</h3>
-    <div id="luodut_treenit"></div>
-
 </div>
-
 </main>
 
 <footer>© 2025 Karoliina Fernandes</footer>
